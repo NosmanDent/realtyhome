@@ -24,7 +24,7 @@ const SearchfilterDetails = () => {
 
     // Make the API request using Axios
     axios
-      .get(`http://localhost:4000/api/estates/search/${searchQuery}`)
+      .get(`https://realtyhome.onrender.com/api/estates/search/${searchQuery}`)
       .then((response) => {
         // Navigate to the search results page with the fetched data
         navigate(`/search-results`, { state: { results: response.data } });

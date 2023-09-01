@@ -14,7 +14,9 @@ const HomeState = () => {
 
   const fetchEstates = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/estates");
+      const response = await fetch(
+        "https://realtyhome.onrender.com/api/estates"
+      );
       const data = await response.json();
 
       // Filter the data to include only estates with state1 and state2

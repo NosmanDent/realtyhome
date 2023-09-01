@@ -22,7 +22,7 @@ const SearchResultsDetails = () => {
   useEffect(() => {
     // Fetch the product details using the API
     axios
-      .get(`http://localhost:4000/api/estates/${id}`)
+      .get(`https://realtyhome.onrender.com/api/estates/${id}`)
       .then((response) => {
         setEstate(response.data);
       })

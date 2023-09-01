@@ -25,7 +25,7 @@ const CategoryPage = () => {
   const fetchCategoryData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:4000/api/estates/category/${category}`
+        `https://realtyhome.onrender.com/api/estates/category/${category}`
       );
       const data = await response.json();
       setCategoryData(data);

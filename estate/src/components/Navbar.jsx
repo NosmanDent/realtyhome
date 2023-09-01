@@ -17,7 +17,9 @@ const Navbar = () => {
 
   const fetchEstates = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/estates");
+      const response = await fetch(
+        "https://realtyhome.onrender.com/api/estates"
+      );
       const data = await response.json();
       setEstates(data);
     } catch (error) {

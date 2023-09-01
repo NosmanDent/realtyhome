@@ -116,10 +116,13 @@ const Create = () => {
     try {
       await new Promise((resolve) => setTimeout(resolve, 500));
 
-      const response = await fetch("http://localhost:4000/api/estates", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://realtyhome.onrender.com/api/estates",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (response.ok) {
         // Document successfully created

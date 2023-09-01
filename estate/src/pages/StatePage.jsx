@@ -25,7 +25,7 @@ const StatePage = () => {
   const fetchStateData = async () => {
     try {
       const response = await fetch(
-        `http://localhost:4000/api/estates/state/${state}`
+        `https://realtyhome.onrender.com/api/estates/state/${state}`
       );
       const data = await response.json();
       setStateData(data);
