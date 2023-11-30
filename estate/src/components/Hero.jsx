@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="w-full absolute top-0 left-0 flex flex-col flex-1 items-center px-4 xs:px-10 md:px-20 justify-center h-[90vh]">
         <div className="bg-black/60 py-8 md:py-10 w-full md:px-10 px-4 xs:px-6 flex flex-col gap-2 items-center md:items-start">
           <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold text-white whitespace-nowrap">
-            Find your next home nowS..
+            Find your next home now..
           </h1>
           <div className="w-full">
             <SearchfilterDetails />
